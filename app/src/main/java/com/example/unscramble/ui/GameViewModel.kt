@@ -70,7 +70,7 @@ class GameViewModel: ViewModel() {
 
     fun resetGame() {
         usedWords.clear()
-        _uiState.value = GameUiState(pickRandomWordAndShuffle())
+        _uiState.value = GameUiState(currentScrambledWord = pickRandomWordAndShuffle())
     }
 
     fun updateUserGuess(guessedWord: String) {
